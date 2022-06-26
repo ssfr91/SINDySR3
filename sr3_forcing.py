@@ -56,7 +56,7 @@ class SR3Forcing(BaseOptimizer):
         Whether to calculate the intercept for this model. If set to false, no
         intercept will be used in calculations.
 
-    normalize : boolean, optional (default False)
+    normalize_columns : boolean, optional (default False)
         This parameter is ignored when fit_intercept is set to False. If True,
         the regressors X will be normalized before regression by subtracting
         the mean and dividing by the l2-norm.
@@ -88,13 +88,13 @@ class SR3Forcing(BaseOptimizer):
         tol=1e-5,
         thresholder="l0",
         max_iter=30,
-        normalize=False,
+        normalize_columns=False,
         fit_intercept=False,
         copy_X=True,
     ):
         super(SR3Forcing, self).__init__(
             max_iter=max_iter,
-            normalize=normalize,
+            normalize_columns=normalize_columns,
             fit_intercept=fit_intercept,
             copy_X=copy_X,
         )

@@ -108,13 +108,13 @@ class SR3Enhanced(BaseOptimizer):
         trimming_step_size=1.0,
         constraint_lhs=None,
         constraint_rhs=None,
-        normalize=False,
+        normalize_columns=False,
         fit_intercept=False,
         copy_X=True,
     ):
         super(SR3Enhanced, self).__init__(
             max_iter=max_iter,
-            normalize=normalize,
+            normalize_columns=normalize_columns,
             fit_intercept=fit_intercept,
             copy_X=copy_X,
         )

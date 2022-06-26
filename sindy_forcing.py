@@ -63,7 +63,6 @@ class SINDyForcing(SINDy):
         differentiation_method=FiniteDifference(),
         feature_names=None,
         discrete_time=False,
-        n_jobs=1,
         **optimizer_kws,
     ):
         optimizer = SR3Forcing(n_forcing_params, forcing_functions, **optimizer_kws)
@@ -73,7 +72,6 @@ class SINDyForcing(SINDy):
             differentiation_method=differentiation_method,
             feature_names=feature_names,
             discrete_time=discrete_time,
-            n_jobs=n_jobs,
         )
 
     def fit(
